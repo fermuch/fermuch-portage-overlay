@@ -1,0 +1,12 @@
+[Unit]
+Description=YaCY
+After=network.target
+
+[Service]
+User=yacy
+ExecStart=/opt/yacy/startYACY.sh
+ExecStop=/opt/yacy/stopYACY.sh
+PIDFile=/opt/yacy/yacy.pid
+
+[Install]
+WantedBy=multi-user.target

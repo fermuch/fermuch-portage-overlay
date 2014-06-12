@@ -1,0 +1,18 @@
+#
+# old_revision [075c2902b90abb6349a6b689e26fa0ecf720ca04]
+#
+# patch "libpurple/plugins/ssl/ssl-nss.c"
+#  from [124c474174cbde7da43e375e4ffa1f47950ab95b]
+#    to [600583b354d9a94ed7aafa37460174404a9903aa]
+#
+============================================================
+--- libpurple/plugins/ssl/ssl-nss.c	124c474174cbde7da43e375e4ffa1f47950ab95b
++++ libpurple/plugins/ssl/ssl-nss.c	600583b354d9a94ed7aafa37460174404a9903aa
+@@ -428,6 +428,7 @@ ssl_nss_connect(PurpleSslConnection *gsc
+ 
+ 	SSL_OptionSet(nss_data->in, SSL_SECURITY,            PR_TRUE);
+ 	SSL_OptionSet(nss_data->in, SSL_HANDSHAKE_AS_CLIENT, PR_TRUE);
++	SSL_OptionSet(nss_data->in, SSL_NO_CACHE,            PR_TRUE);
+ 
+ 	SSL_AuthCertificateHook(nss_data->in,
+ 							(SSLAuthCertificate)ssl_auth_cert,
