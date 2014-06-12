@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+      <name><![CDATA[sublime-text]]></name>
+      <description><![CDATA[ebuilds to install the custom packages I created]]></description>
+      <homepage>https://github.com/DamnWidget/sublime-text</homepage>
+      <owner>
+        <email>fermuch at cryptolab dot com</email>
+      </owner>
+      <source type="git">git://github.com/fermuch/fermuch-portage-overlay.git</source>
+      <feed>https://github.com/fermuch/fermuch-portage-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
